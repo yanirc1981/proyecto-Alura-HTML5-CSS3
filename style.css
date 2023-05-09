@@ -1,0 +1,259 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+header{
+
+background-color: rgb(217, 165, 195); 
+padding: 20px 0;
+}
+.caja{
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+    transition: 400ms;
+    box-shadow: 10px 10px 30px 15px black;
+}
+
+nav{
+    position: absolute;
+    top: 80px;
+    right: 30px;
+}
+.logo{
+    width: 20%;
+    height: 200px;
+}
+.logo2{
+    width: 35%;
+    height: 200px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+nav a{
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+nav a:hover{
+    color: deeppink;
+    text-decoration:underline;
+}
+.productos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
+}
+.productos li{
+display: inline-block;
+text-align: center;
+width: 30%;
+vertical-align: top;
+margin: 0 1.5%;
+padding: 30px 20px;
+box-sizing: border-box;
+border-color: black;
+border-width:2px;
+border-style: solid;
+border-radius: 10px;
+
+width: 30%;
+transition: 400ms;
+box-shadow: 10px 10px 30px 15px black;
+
+}
+
+.productos li:hover{
+    border-color: rgb(217, 165, 195);
+   
+    
+}
+.productos li:active{
+    border-color:  rgb(217, 165, 195);
+}
+.productos h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+.productos li:hover h2{
+    font-size: 33px;
+}
+.producto-descripcion{
+    font-size: 18px;
+}
+.producto-precio{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+
+}
+.imagen-contenido{
+    width: 200px;
+    height: 200px;
+}
+footer{
+    text-align: center;
+    background-color:rgb(217, 165, 195);
+    padding: 40px;
+}
+.copyrigth{
+    color:white;
+    font-size: 13px;
+
+}
+.imagen-footer{
+    height: 100px;
+}
+
+form{
+    margin: 50px 100px 50px 100px;
+   
+}
+form label, form legend{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+    
+
+}
+.padron{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+.checbox{
+    margin: 20px 0;
+}
+.enviar{
+    width: 40%;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: beige;
+    background: rgb(217, 165, 195);
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+}
+.enviar:hover{
+    background: rgb(217, 165, 195);
+    transform: scale(1.2);
+}
+table{
+    margin: 40px 100px;
+}
+thead{
+    background: rgb(217, 165, 195);
+    color: beige;
+    font-weight: bold;
+}
+td, th{
+    border: 1px solid black;
+    padding: 8px 15px;
+}
+/*css para nuestro home*/
+
+.banner{
+    width: 100%;
+}
+.principal{
+    padding: 3em 0;
+    background: rgb(251, 245, 248);
+    width: 940px;
+    margin: 0 auto;
+   
+}
+.titulo-principal{
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: left;
+
+}
+.principal p{
+    margin: 0 0 1em;
+}
+.principal strong{
+    font-weight:bold ;
+}
+
+.principal em{
+    font-style: italic;
+}
+.utensillos{
+    width: 120px;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+.mapa{
+    padding: 3em 0;
+    background:linear-gradient(rgb(217, 165, 195),rgb(202, 73, 157));
+}
+.mapa p{
+    margin: 0 0 2em;
+    text-align: center;
+}
+.mapa-contenido{
+    width: 940px;
+    margin: 0 auto;
+}
+.diferenciales{
+    padding: 3em 0;
+    background:linear-gradient(rgb(202, 73, 157),rgb(107, 11, 51)) ;
+    
+
+}
+.contenido-diferenciales{
+    width: 640px;
+    margin: 0 auto;
+}
+.lista-diferenciales{
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+.items{
+    line-height: 1.5;
+}
+.items:first-child{
+    font-weight: bold;
+}
+.items:before{
+    content:"🤍"
+   ;
+}
+.imgdiferencial{
+    width: 60%;
+    transition: 400ms;
+    box-shadow: 10px 10px 30px 15px black;
+}
+.imgdiferencial:hover{
+    opacity: 0.3;
+    transition: 400ms;
+}
+.video{
+    width: 560px;
+    margin: 50px auto;
+}
+@media  screen and (max-width:480px){
+    h1{
+        text-align: center;
+    }
+    nav{
+        position: static;
+    }
+    .caja, .principal, .mapa-contenido, .contenido-diferenciales, .video{
+        width: auto;
+    }
+    .lista-diferenciales, .imgdiferencial{
+        width: 100%;
+    }
+}
